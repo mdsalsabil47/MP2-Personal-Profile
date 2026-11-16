@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD. Salsabil | Personal Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+
+    <!-- Header -->
+    <header class="bg-[#1f2a44] text-white px-6 py-5">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+
+            <h1 class="text-2xl font-bold">MD. Salsabil</h1>
+
+            <nav>
+                <ul class="flex flex-wrap justify-center gap-5">
+                    <li><a href="#about" class="hover:text-blue-300 transition">About</a></li>
+                    <li><a href="#skills" class="hover:text-blue-300 transition">Skills</a></li>
+                    <li><a href="#projects" class="hover:text-blue-300 transition">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-blue-300 transition">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10">
+
+        <!-- About Section -->
+        <section id="about" class="mb-14 flex flex-col md:flex-row items-center gap-8">
+
+            <img src="image.jpg"
+                 alt="Portrait photo of MD. Salsabil"
+                 class="w-40 h-40 rounded-full object-cover border-4 border-[#1f2a44]">
+
+            <div class="flex-1 text-center md:text-left">
+                <h2 class="text-2xl font-bold text-[#1f2a44] border-b-4 border-[#1f2a44] inline-block pb-1 mb-4">
+                    About Me
+                </h2>
+
+                <p class="text-gray-700">
+                    Hi, I'm MD. Salsabil, a Computer Science and Engineering student at
+                    International Islamic University Chittagong (IIUC). I enjoy building
+                    software, solving problems with code, and learning new technologies
+                    as I grow through my studies.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-14">
+
+            <h2 class="text-2xl font-bold text-[#1f2a44] border-b-4 border-[#1f2a44] inline-block pb-1 mb-6">
+                Skills
+            </h2>
+
+            <ul class="flex flex-wrap gap-4">
+                <li class="bg-[#1f2a44] text-white px-5 py-2 rounded-md font-medium hover:bg-[#35446b] transition">
+                    C / C++ Programming
+                </li>
+
+                <li class="bg-[#1f2a44] text-white px-5 py-2 rounded-md font-medium hover:bg-[#35446b] transition">
+                    Data Structures &amp; Algorithms
+                </li>
+
+                <li class="bg-[#1f2a44] text-white px-5 py-2 rounded-md font-medium hover:bg-[#35446b] transition">
+                    HTML5 &amp; CSS3
+                </li>
+
+                <li class="bg-[#1f2a44] text-white px-5 py-2 rounded-md font-medium hover:bg-[#35446b] transition">
+                    Problem Solving
+                </li>
+            </ul>
+
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-14">
+
+            <h2 class="text-2xl font-bold text-[#1f2a44] border-b-4 border-[#1f2a44] inline-block pb-1 mb-6">
+                Projects
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <article class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                    <h3 class="text-xl font-bold text-[#1f2a44] mb-3">
+                        Flappy Bird game
+                    </h3>
+
+                    <p class="text-gray-700">
+                        A simple Flappy Bird game clone built using C programming and Raylib library,
+                        demonstrating my understanding of game mechanics and DOM manipulation.
+                    </p>
+                </article>
+
+                <article class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                    <h3 class="text-xl font-bold text-[#1f2a44] mb-3">
+                        Personal Profile Page
+                    </h3>
+
+                    <p class="text-gray-700">
+                        A responsive personal profile website built with semantic HTML5
+                        and CSS3, showcasing my background, skills, and projects.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mb-10">
+
+            <h2 class="text-2xl font-bold text-[#1f2a44] border-b-4 border-[#1f2a44] inline-block pb-1 mb-6">
+                Contact
+            </h2>
+
+            <p class="mb-5">
+                Email:
+                <a href="mailto:salsabil@example.com"
+                   class="text-blue-700 hover:underline">
+                    salsabil@example.com
+                </a>
+            </p>
+
+            <form class="flex flex-col gap-3 max-w-lg">
+
+                <label for="name" class="font-semibold">Name</label>
+                <input type="text" id="name" name="name" required
+                       class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+                <label for="email" class="font-semibold">Email</label>
+                <input type="email" id="email" name="email" required
+                       class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+                <label for="message" class="font-semibold">Message</label>
+                <textarea id="message" name="message" rows="5" required
+                          class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+
+                <button type="submit"
+                        class="self-start mt-2 px-6 py-3 bg-[#1f2a44] text-white font-semibold rounded-md hover:bg-[#35446b] transition cursor-pointer">
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1f2a44] text-white text-center py-6 px-4">
+        <p>&copy; 2026 MD. Salsabil. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
